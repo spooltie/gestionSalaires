@@ -15,6 +15,8 @@ public abstract class Employe {
 
     public abstract int getSalaire();
 
+
+
     public String getDescription(){
         return nom+" "+prenom+" est "+poste+" depuis "+anciennete+" ans et gagne "+getSalaire()+" €.";
     }
