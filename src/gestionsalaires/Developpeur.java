@@ -17,13 +17,13 @@ public class Developpeur extends Employe{
     }
     @Override
     public int getSalaire(){
-        if (languages=="java"){
+        if (languages.equals("java")){
             return(1900+anciennete*100+50);
         }
-        else if (languages=="python"){
+        else if (languages.equals("python")){
             return(1900+anciennete*100+70);
         }
-        else if (languages=="php"){
+        else if (languages.equals("php")){
             return(1900+anciennete*100+45);
         }
         return(1900+anciennete*100);

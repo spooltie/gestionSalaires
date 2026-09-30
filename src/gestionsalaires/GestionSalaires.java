@@ -16,19 +16,21 @@ public class GestionSalaires {
     public static void main(String[] args) {
         // Tests applicatifs
         Developpeur d = new Developpeur("Durand", "Michel", 4,"Python");
-        Developpeur dd = new Developpeur("Durand", "Michel1", 4,"Java");
-        Developpeur ddd = new Developpeur("Durand", "Michel2", 4,"Php");
+        Developpeur dd = new Developpeur("Durand", "Michel1", 5,"Java");
+        Developpeur ddd = new Developpeur("Durand", "Michel2", 6,"Php");
 
 
         //Manager m = new Manager("Dupont", "Lucie", 2);
         //AgentAdmin a = new AgentAdmin("Durand","Pierre",4);
+        Developpeur_Expert de = new Developpeur_Expert("Durand", "Laurent", 9,"Java");
+
 
 
 
         System.out.println(d.getDescription());
         System.out.println(dd.getDescription());
         System.out.println(ddd.getDescription());
-
+        System.out.println(de.getDescription());
         //System.out.println(m.getDescription());
         //System.out.printf(a.getDescription());
     }
