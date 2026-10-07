@@ -4,6 +4,8 @@
  */
 package gestionsalaires;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author maxim
@@ -25,14 +27,13 @@ public class GestionSalaires {
         Developpeur_Expert de = new Developpeur_Expert("Durand", "Laurent", 9,"Java");
 
 
+        Services s = new Services();
+        s.ListerEmployes(d);
+        s.ListerEmployes(dd);
+        s.ListerEmployes(ddd);
 
 
-        System.out.println(d.getDescription());
-        System.out.println(dd.getDescription());
-        System.out.println(ddd.getDescription());
-        System.out.println(de.getDescription());
-        //System.out.println(m.getDescription());
-        //System.out.printf(a.getDescription());
+        s.CalculSalaires();
     }
     
 }
