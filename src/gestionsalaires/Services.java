@@ -11,14 +11,19 @@ public class Services {
     this.employes = new ArrayList<Employe>();
     }
 
-    public void ListerEmployes(Employe a){
-        employes.add(a);
+    public void AjouterEmployes(Employe e){
+        this.employes.add(e);
+    }
+
+    public void  ListerEmployes(){
+        for (Employe e:employes){
+            System.out.println(e.getDescription());
+        }
     }
     public void CalculSalaires(){
         double somme = 0;
-        for (Employe a : employes){
-            somme+=a.getSalaire();
-            System.out.println(a.getDescription());
+        for (Employe e : employes){
+            somme+=e.getSalaire();
         }
         System.out.println("La somme total des salaires est : "+somme);
     }

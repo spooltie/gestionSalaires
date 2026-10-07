@@ -28,10 +28,11 @@ public class GestionSalaires {
 
 
         Services s = new Services();
-        s.ListerEmployes(d);
-        s.ListerEmployes(dd);
-        s.ListerEmployes(ddd);
+        s.AjouterEmployes(d);
+        s.AjouterEmployes(dd);
+        s.AjouterEmployes(ddd);
 
+        s.ListerEmployes();
 
         s.CalculSalaires();
     }
